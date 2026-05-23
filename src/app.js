@@ -6,7 +6,7 @@ const earlyAccessRoutes = require("./modules/earlyAccess/earlyAccess.routes")
 const app = express()
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: ["http://localhost:5173", "https://www.nerolith.in", "https://nerolith.in"],
   methods: ["GET", "POST"],
 }))
 
